@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Austin - Walk-On App</title>
+<script type="text/javascript" src="client.js"></script>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		Walk-On Songs
+	</header>
+	
+	<div class="songs">
+<% for(var i=0; i < songs.length; i++) { %>
+   	 <div class="song" data-filename="<%= songs[i].filename %>" data-interpret="<%= songs[i].interpret %>" data-nickname="<%= songs[i].nickname %>" data-title="<%= songs[i].title %>">
+   	 <h1><%= songs[i].nickname %></h1>
+   	 <h3><%= songs[i].interpret %> - <%= songs[i].title %></h3>
+   	 </div>
+<% } %>
+</div>
+	<footer>
+		<button id="stop"><i class="fa fa-stop"></i></button>
+		<span id="current-nickname"><%= currentSong ? currentSong.nickname : '-' %></span> 
+		<span id="current-song"><%= currentSong ? currentSong.interpret + ' - ' + currentSong.title : '-' %></span>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DFF0FF;
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+}
+
+.song {
+    display: inline-block;
+    background-color: #0E0F3F;
+    border-style: solid;
+    margin: 10px 10px;
+    width: 120px;
+    height: 120px;
+    font-size: 14px;
+    color: #f9f9f9;
+    border-radius: 100px;
+    padding: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: arial;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+.songs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+h1 {
+    padding: 0;
+    margin: 8px 0;
+    font-size: 13px;
+    word-wrap: break-word;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 9px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2781F2;
+    padding: 5px;
+    color: #fff;
+}
+
+button#stop {
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+    margin: 5px;
+    color: white;
+    font-size: 13px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+span#current-nickname {
+    font-weight: bold;
+}
